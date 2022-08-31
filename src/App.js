@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Lilit from './Lilit/Lilit';
+import Login from './Login';
+import Lyov from './Lyov/Lyov';
+import Menu from './Menu';
+import Rozi from './rozi/TodoList';
+import Vahe from './vahe/Vahe';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Login />}/>
+                <Route path="/menu" element={<Menu />} />
+                <Route path="/vahe" element={<Vahe />} />
+                <Route path="/lilit" element={<Lilit />} />
+                <Route path="/lyov" element={<Lyov />} />
+                <Route path="/rozi" element={<TodoList />} />
+            </Routes>
+        </Router>
+
+    );
 }
 
 export default App;
