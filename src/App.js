@@ -4,7 +4,7 @@ import Lilit from './Lilit/Lilit';
 import Login from './Login';
 import Lyov from './Lyov/Lyov';
 import Menu from './Menu';
-import Rozi from './rozi/TodoList';
+import TodoList from './rozi/TodoList';
 import Vahe from './vahe/Vahe';
 
 function App() {
