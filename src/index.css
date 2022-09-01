@@ -1,13 +1,87 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
+.page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  position: absolute;
+  right: 35%;
+  top: 10%;
+}
+
+.cover {
+  background-color: rgb(231, 224, 224);
+  width: 30em;
+  height: 35em;
+  border-radius: 1em;
+  box-shadow: 0 0.188em 1.550em rgb(120, 116, 116);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.login-page {
+  letter-spacing: 2px;
+}
+
+
+.L_input {
+  color: rgb(0, 0, 0);
+  width: 65%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1em;
+  font-size: medium;
+  letter-spacing: 1px;
+  box-shadow: 0 0.188em 1.550em rgb(161, 156, 156);
+}
+
+
+.login-btn {
+  width: 40%;
+  height: 3em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(85, 189, 196);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: large;
+}
+
+.login-btn:hover {
+  transform: scale(1.25);
+}
+
+.text {
+  position: relative;
+  bottom: -2em;
+}
+
+.hide {
+  position: absolute;
+  transform: scale(0);
+}
+
+.login-popup {
+  position: absolute;
+  height: 30em;
+  width: 30em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25em;
+  background-color: black;
+  color: white;
+  bottom: 0;
+  transform: scale(1);
+  transition: 1.5s;
+}
