@@ -63,7 +63,7 @@ function Lilit() {
         <div className="wrapper">
             <div className="wrapper-content">
                 <div className="table-data">
-                    <table>
+                    <table className="table">
                         <th>#</th>
                         <th>User Name</th>
                         <th>User Surneme</th>
@@ -89,7 +89,7 @@ function Lilit() {
                     </table>
                 </div>
                 <div>
-                    <form onSubmit={handleSubmitUser}onReset ={hendleCleanClick}>
+                    <form className="form" onSubmit={handleSubmitUser}onReset ={hendleCleanClick}>
                         <input placeholder="white your name"onChange={(e) => setUserData((prevState) =>({
                             ...prevState,
                             userName: e.target.value
