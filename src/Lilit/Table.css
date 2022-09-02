@@ -1,43 +1,59 @@
-.wrapper{
+.lil-wrapper{
     width: 100%;
     display: flex;
     justify-content: center;
    
 }
-.wrapper-content{
+.lil-wrapper-content{
     display: flex;
     justify-content: space-between;
     width: 800px;
     
 }
-.form{
+.lil-form{
     display: flex;
     flex-direction: column;
 }
-input{
+.lil-input{
     padding: 5px;
     margin: 5px 0;
 }
-input:first-child{
+.lil-input:first-child{
     margin: 0 0 5px;
 }
-.botton-wrapper{
+.lil-botton-wrapper{
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin: 10px 0;
 }
-button{
+.button-clean{
+    background-color:rgb(194, 165, 221) ;
     width: 70px;
     border-radius: 20px;
-    background-color:rgb(194, 165, 221) ;
 }
-.table{
+.button-add{
+    background-color:rgb(194, 165, 221) ;
+    width: 70px;
+    border-radius: 20px; 
+}
+.lil-edit-ection{
+    background-color:rgb(194, 165, 221) ;
+    width: 70px;
+    border-radius: 20px; 
+}
+.lil-remove-ection{
+    background-color:rgb(194, 165, 221) ;
+    width: 70px;
+    border-radius: 20px; 
+
+}
+.lil-table{
     width: 100%;
     border-collapse: collapse;
     border: 1px solid gray;
 }
-th{
+.lil-th{
     min-width: 100px;
     border: 1px solid gray;
     text-align: left;
@@ -46,10 +62,10 @@ th{
     color: white;
 
 }
-th:first-child{
+.lil-th:first-child{
     min-width: 20px;
 }
-td{
+.lil-td{
     border: 1px solid black;
     padding: 3px;
 
