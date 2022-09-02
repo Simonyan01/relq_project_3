@@ -113,15 +113,15 @@ const Vahe = () => {
 
   return (
     <div className="app-container">
-      <form onSubmit={handleEditFormSubmit}>
-        <table>
+      <form className="v_form" onSubmit={handleEditFormSubmit}>
+        <table className="v_table">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Address</th>
-              <th>Phone Number</th>
-              <th>Email</th>
-              <th>Actions</th>
+              <th className="v_th">Name</th>
+              <th className="v_th">Address</th>
+              <th className="v_th">Phone Number</th>
+              <th className="v_th">Email</th>
+              <th className="v_th">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -147,7 +147,7 @@ const Vahe = () => {
       </form>
 
       <h2>Add a Contact</h2>
-      <form onSubmit={handleAddFormSubmit}>
+      <form className="v_form" onSubmit={handleAddFormSubmit}>
         <input
           type="text"
           name="fullName"
