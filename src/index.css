@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: -o-linear-gradient(to right red 50%, blue, green 50%);
 }
 
 .main {
@@ -27,20 +28,26 @@
 
 .login-page {
   letter-spacing: 2px;
+  font-family: cursive;
+  cursor: pointer;
 }
 
 
 .L_input {
-  color: rgb(0, 0, 0);
   width: 65%;
   border-radius: 10px;
   text-align: center;
   padding: 1em;
+  border: none;
   font-size: medium;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  transition: .5s;
   box-shadow: 0 0.188em 1.550em rgb(161, 156, 156);
 }
 
+.L_input:hover {
+  transform: scale(1.07);
+}
 
 .login-btn {
   width: 40%;
@@ -53,7 +60,8 @@
   transition: 0.5s;
   border-radius: 10px;
   cursor: pointer;
-  font-size: large;
+  font-size: larger;
+  letter-spacing: 1px;
 }
 
 .login-btn:hover {
@@ -69,6 +77,191 @@
   position: absolute;
   transform: scale(0);
 }
+
+.menu {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  margin: 5% 3%;
+
+}
+
+.m_text {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 3px;
+  font-size: 70px;
+  text-align: center;
+  cursor: pointer;
+  transition: color .3s linear;
+  color: rgb(165, 156, 156);
+}
+
+.m_text:hover {
+  color: black;
+}
+
+.lilit {
+  border-radius: 7px;
+  padding: 3px 50px;
+  margin: 0 100px;
+  transition: color .3s linear;
+  font-family: cursive;
+  font-size: larger;
+  letter-spacing: 1px;
+  min-width: 180px;
+  position: relative;
+  background: none;
+  border: 2px ridge rgb(217, 213, 213);
+}
+
+.lilit:hover {
+  color: #fff;
+}
+
+.lilit::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.lilit_btn::before {
+  transform: scaleX(0);
+}
+
+.lilit_btn:hover::before {
+  transform: scaleX(1);
+}
+
+.lyov {
+  border-radius: 7px;
+  padding: 3px 50px;
+  margin: 0 100px;
+  transition: color .3s linear;
+  font-family: cursive;
+  font-size: larger;
+  letter-spacing: 1px;
+  min-width: 180px;
+  position: relative;
+  background: none;
+  border: 2px ridge rgb(217, 213, 213);
+}
+
+.lyov:hover {
+  color: #fff;
+}
+
+.lyov::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.lyov_btn::before {
+  transform: scaleX(0);
+}
+
+.lyov_btn:hover::before {
+  transform: scaleX(1);
+}
+
+.rozi {
+  border-radius: 7px;
+  padding: 3px 50px;
+  margin: 0 100px;
+  transition: color .3s linear;
+  font-family: cursive;
+  font-size: larger;
+  letter-spacing: 1px;
+  min-width: 180px;
+  position: relative;
+  background: none;
+  border: 2px ridge rgb(217, 213, 213);
+}
+
+.rozi:hover {
+  color: #fff;
+}
+
+.rozi::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.rozi_btn::before {
+  transform: scaleX(0);
+}
+
+.rozi_btn:hover::before {
+  transform: scaleX(1);
+}
+
+.vahe {
+  border-radius: 7px;
+  padding: 3px 50px;
+  margin: 0 100px;
+  transition: color .3s linear;
+  font-family: cursive;
+  font-size: larger;
+  letter-spacing: 1px;
+  min-width: 180px;
+  position: relative;
+  background: none;
+  border: 2px ridge rgb(217, 213, 213);
+}
+
+.vahe:hover {
+  color: #fff;
+}
+
+.vahe::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.vahe_btn::before {
+  transform: scaleX(0);
+}
+
+.vahe_btn:hover::before {
+  transform: scaleX(1);
+}
+
 
 .login-popup {
   position: absolute;
