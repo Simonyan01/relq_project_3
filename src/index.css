@@ -27,20 +27,26 @@
 
 .login-page {
   letter-spacing: 2px;
+  font-family: cursive;
+  cursor: pointer;
 }
 
 
 .L_input {
-  color: rgb(0, 0, 0);
   width: 65%;
   border-radius: 10px;
   text-align: center;
   padding: 1em;
+  border: none;
   font-size: medium;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  transition: .5s;
   box-shadow: 0 0.188em 1.550em rgb(161, 156, 156);
 }
 
+.L_input:hover {
+  transform: scale(1.07);
+}
 
 .login-btn {
   width: 40%;
@@ -53,7 +59,8 @@
   transition: 0.5s;
   border-radius: 10px;
   cursor: pointer;
-  font-size: large;
+  font-size: larger;
+  letter-spacing: 1px;
 }
 
 .login-btn:hover {
@@ -68,6 +75,39 @@
 .hide {
   position: absolute;
   transform: scale(0);
+}
+
+.menu {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  margin: 5% 15%;
+}
+
+.m_text {
+  text-align: center;
+
+}
+
+.lilit {
+  padding:3px 50px;
+  margin: 0 100px;
+  color: aqua;
+}
+
+.lyov {
+  margin: 0 100px;
+  color: aqua;
+}
+
+.rozi {
+  margin: 0 100px;
+}
+
+.vahe {
+  margin: 0 100px;
 }
 
 .login-popup {

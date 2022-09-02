@@ -15,13 +15,13 @@ const Login = () => {
         <div className="main">
             <div className="cover">
                 <h1 className="login-page">Login Page</h1>
-                <input className="L_input" type="text" placeholder="Username" />
+                <input className="L_input" type="text" placeholder="Username"  />
                 <input className="L_input" type="password" placeholder="Password" />
 
                 <div className="login-btn" onClick={() => { navigate("/Menu") }}  > Login </div>
 
                 <div className={popupStyle}>
-                    <h3>Login Failed</h3>
+                    <h2>Login Failed</h2>
                     <p>Username or password incorrect</p>
                 </div>
 
