@@ -5,37 +5,37 @@
     padding: 1rem;
   }
   
-  table {
+  .v_table {
     border-collapse: collapse;
     width: 100%;
   }
   
-  th,
-  td {
+  .v_th,
+  .v_td {
     border: 1px solid #ffffff;
     text-align: left;
     padding: 8px;
     font-size: 32px;
   }
   
-  th {
-    background-color: rgb(117, 201, 250);
+  .v_th {
+    background-color: rgb(117, 148, 250);
   }
   
-  td {
-    background-color: rgb(205, 235, 253);
+  .v_td {
+    background-color: rgba(117, 148, 250, 0.459);
   }
   
-  form {
+  .v_form {
     display: flex;
     gap: 5px;
   }
   
-  form td:last-child {
+  .v_form td:last-child {
     display: flex;
     justify-content: space-evenly;
   }
   
-  form * {
+  .v_form * {
     font-size: 28px;
   }
