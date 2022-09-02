@@ -29,10 +29,6 @@ const Login = () => {
         <div className="main">
             <div className="cover">
                 <h1 className="login-page">Login Page</h1>
-                <input className="L_input" type="text" placeholder="Username" />
-                <input className="L_input" type="password" placeholder="Password" />
-
-                <div className="login-btn" onClick={() => popup()}> Login </div>
 
                 <input className="L_input" type="text" placeholder="Username" value={username} onChange={(event) => setusername(event.target.value)} />
 
@@ -43,7 +39,7 @@ const Login = () => {
 
                 <div className={popupStyle}>
                     <h2>Login Failed</h2>
-                    <p>Username or password incorrect</p>
+                    <h2>Username or password incorrect</h2>
                 </div>
 
             </div>
