@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: -o-linear-gradient(to right red 50%, blue, green 50%);
 }
 
 .main {
@@ -82,33 +83,185 @@
   display: flex;
   align-items: center;
   position: absolute;
-  top: 15%;
-  margin: 5% 15%;
+  top: 25%;
+  margin: 5% 3%;
+
 }
 
 .m_text {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 3px;
+  font-size: 70px;
   text-align: center;
+  cursor: pointer;
+  transition: color .3s linear;
+  color: rgb(165, 156, 156);
+}
 
+.m_text:hover {
+  color: black;
 }
 
 .lilit {
-  padding:3px 50px;
+  border-radius: 7px;
+  padding: 3px 50px;
   margin: 0 100px;
-  color: aqua;
+  transition: color .3s linear;
+  font-family: cursive;
+  font-size: larger;
+  letter-spacing: 1px;
+  min-width: 180px;
+  position: relative;
+  background: none;
+  border: 2px ridge rgb(217, 213, 213);
+}
+
+.lilit:hover {
+  color: #fff;
+}
+
+.lilit::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.lilit_btn::before {
+  transform: scaleX(0);
+}
+
+.lilit_btn:hover::before {
+  transform: scaleX(1);
 }
 
 .lyov {
+  border-radius: 7px;
+  padding: 3px 50px;
   margin: 0 100px;
-  color: aqua;
+  transition: color .3s linear;
+  font-family: cursive;
+  font-size: larger;
+  letter-spacing: 1px;
+  min-width: 180px;
+  position: relative;
+  background: none;
+  border: 2px ridge rgb(217, 213, 213);
+}
+
+.lyov:hover {
+  color: #fff;
+}
+
+.lyov::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.lyov_btn::before {
+  transform: scaleX(0);
+}
+
+.lyov_btn:hover::before {
+  transform: scaleX(1);
 }
 
 .rozi {
+  border-radius: 7px;
+  padding: 3px 50px;
   margin: 0 100px;
+  transition: color .3s linear;
+  font-family: cursive;
+  font-size: larger;
+  letter-spacing: 1px;
+  min-width: 180px;
+  position: relative;
+  background: none;
+  border: 2px ridge rgb(217, 213, 213);
+}
+
+.rozi:hover {
+  color: #fff;
+}
+
+.rozi::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.rozi_btn::before {
+  transform: scaleX(0);
+}
+
+.rozi_btn:hover::before {
+  transform: scaleX(1);
 }
 
 .vahe {
+  border-radius: 7px;
+  padding: 3px 50px;
   margin: 0 100px;
+  transition: color .3s linear;
+  font-family: cursive;
+  font-size: larger;
+  letter-spacing: 1px;
+  min-width: 180px;
+  position: relative;
+  background: none;
+  border: 2px ridge rgb(217, 213, 213);
 }
+
+.vahe:hover {
+  color: #fff;
+}
+
+.vahe::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.vahe_btn::before {
+  transform: scaleX(0);
+}
+
+.vahe_btn:hover::before {
+  transform: scaleX(1);
+}
+
 
 .login-popup {
   position: absolute;

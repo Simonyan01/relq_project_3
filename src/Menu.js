@@ -5,12 +5,12 @@ function Menu() {
   let navigate = useNavigate();
   return (
     <div>
-      <h1 className='m_text'> This is the Menu page!</h1>
+      <h1 className='m_text'>TABLE MENU </h1>
       <div className="menu">
-        <button class="lilit" onClick={() => { navigate("/Lilit") }}>Lilit</button>
-        <button class="rozi" onClick={() => { navigate("/Rozi") }}>Rozi</button>
-        <button class="vahe" onClick={() => { navigate("/Vahe") }}>Vahe</button>
-        <button class="lyov" onClick={() => { navigate("/Lyov") }}>Lyov</button>
+        <button class="lyov lyov_btn" onClick={() => { navigate("/Lyov") }}>Lyov</button>
+        <button class="vahe vahe_btn" onClick={() => { navigate("/Vahe") }}>Vahe</button>
+        <button class="rozi rozi_btn" onClick={() => { navigate("/Rozi") }}>Rozi</button>
+        <button className="lilit lilit_btn" onClick={() => { navigate("/Lilit") }}>Lilit</button>
       </div>
     </div>
   );

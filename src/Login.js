@@ -18,7 +18,7 @@ const Login = () => {
                 <input className="L_input" type="text" placeholder="Username"  />
                 <input className="L_input" type="password" placeholder="Password" />
 
-                <div className="login-btn" onClick={() => { navigate("/Menu") }}  > Login </div>
+                <div className="login-btn" onClick={() => popup()}> Login </div>
 
                 <div className={popupStyle}>
                     <h2>Login Failed</h2>
