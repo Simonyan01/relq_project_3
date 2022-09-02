@@ -60,27 +60,27 @@ function Lilit() {
 
     return (
 
-        <div className="wrapper">
-            <div className="wrapper-content">
-                <div className="table-data">
-                    <table>
-                        <th>#</th>
-                        <th>User Name</th>
-                        <th>User Surneme</th>
-                        <th>User Salary</th>
-                        <th>Actions</th>
+        <div className="lil-wrapper">
+            <div className="lil-wrapper-content">
+                <div className="lil-table-data">
+                    <table className="lil-table">
+                        <th className="lil-th">#</th>
+                        <th className="lil-th">User Name</th>
+                        <th className="lil-th">User Surneme</th>
+                        <th className="lil-th">User Salary</th>
+                        <th className="lil-th">Actions</th>
 
                         <tbody>
                             {users.map((user,index) => (
                                 <tr>
-                                    <td>{index +1}</td>
-                                    <td>{user.userName}</td>
-                                    <td>{user.userSurname}</td>
-                                    <td>{user.userSalary}</td>
-                                    <td>
+                                    <td className="lil-td">{index +1}</td>
+                                    <td className="lil-td">{user.userName}</td>
+                                    <td className="lil-td">{user.userSurname}</td>
+                                    <td className="lil-td">{user.userSalary}</td>
+                                    <td className="lil-td">
                                         <div>
-                                            <button className="edit-ection" onClick={() =>handleEditClick (user,index)}>edit</button>
-                                            <button className="remove-ection"onClick={() =>hendleRemove(index)}>remove</button>
+                                            <button className="lil-edit-ection" onClick={() =>handleEditClick (user,index)}>edit</button>
+                                            <button className="lil-remove-ection"onClick={() =>hendleRemove(index)}>remove</button>
                                         </div>
                                     </td> 
                                 </tr>
@@ -89,20 +89,20 @@ function Lilit() {
                     </table>
                 </div>
                 <div>
-                    <form onSubmit={handleSubmitUser}onReset ={hendleCleanClick}>
-                        <input placeholder="white your name"onChange={(e) => setUserData((prevState) =>({
+                    <form className="lil-form" onSubmit={handleSubmitUser}onReset ={hendleCleanClick}>
+                        <input className="lil-input" placeholder="white your name"onChange={(e) => setUserData((prevState) =>({
                             ...prevState,
                             userName: e.target.value
                         }))}
                         value ={userData.userName} 
                         />
-                        <input placeholder="white your surname"onChange={(e) => setUserData((prevState) =>({
+                        <input className="lil-input" placeholder="white your surname"onChange={(e) => setUserData((prevState) =>({
                             ...prevState,
                             userSurname: e.target.value
                         }))}
                         value ={userData.userSurname}
                         />
-                        <input placeholder="white your salary"onChange={(e) => setUserData((prevState) =>({
+                        <input className="lil-input" placeholder="white your salary"onChange={(e) => setUserData((prevState) =>({
                             ...prevState,
                             userSalary: e.target.value
                         }))}
@@ -110,9 +110,9 @@ function Lilit() {
                         />
 
 
-                        <div className="botton-wrapper">
-                            <button type="reset">Clean</button>
-                            <button disabled ={!isFilledFields} type="submit">{editableUserData.isEdit ? 'Edit': 'Add'}</button>
+                        <div className="lil-botton-wrapper">
+                            <button className="button-clean" type="reset">Clean</button>
+                            <button className="button-add" disabled ={!isFilledFields} type="submit">{editableUserData.isEdit ? 'Edit': 'Add'}</button>
                         </div>
                     </form>
                 </div>
