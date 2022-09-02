@@ -3,7 +3,7 @@ import React from "react";
 const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }) => {
     return (
         <tr>
-            <td>
+            <td className="v_td">
             <input
                 type="text"
                 name="fullName"
@@ -13,7 +13,7 @@ const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }) 
                 onChange={handleEditFormChange}
             />
             </td>
-            <td>
+            <td className="v_td">
             <input
                 type="text"
                 name="address"
@@ -23,7 +23,7 @@ const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }) 
                 onChange={handleEditFormChange}
             />
             </td>
-            <td>
+            <td className="v_td">
             <input
                 type="text"
                 name="phoneNumber"
@@ -33,7 +33,7 @@ const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }) 
                 onChange={handleEditFormChange}
             />
             </td>
-            <td>
+            <td className="v_td">
             <input
                 type="email"
                 name="email"
@@ -43,7 +43,7 @@ const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }) 
                 onChange={handleEditFormChange}
             />
             </td>
-            <td>
+            <td className="v_td">
                 <button type="submit">Save</button>
                 <button type="button" onClick={handleCancelClick}>Cancel</button>
             </td>
