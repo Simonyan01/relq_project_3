@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
-import Menu from './Menu';
+
 
 const Login = () => {
 
