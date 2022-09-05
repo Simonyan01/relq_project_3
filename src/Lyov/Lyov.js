@@ -23,7 +23,7 @@ function Lyov() {
   const handleRemoveClick = (index) => {
     setUsers(users.filter((user, userIndex) => userIndex !== index));
   }
-  const isFilledFields = userData.userName && userData.userSurname && userData.userSalary;
+  const isFilledFields = userData.userName && userData.userSurname && userData.userSalary && userData.userAge;
 
   const handleSubmitUser = (e) => {
 
