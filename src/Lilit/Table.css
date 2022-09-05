@@ -27,7 +27,7 @@
     width: 100%;
     margin: 10px 0;
 }
-.lil-button-clean{
+.button-clean{
     background-color:rgb(194, 165, 221) ;
     width: 70px;
     border-radius: 20px;
@@ -37,7 +37,7 @@
     width: 70px;
     border-radius: 20px; 
 }
-.dit-ection{
+.lil-edit-ection{
     background-color:rgb(194, 165, 221) ;
     width: 70px;
     border-radius: 20px; 
