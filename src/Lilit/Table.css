@@ -27,12 +27,12 @@
     width: 100%;
     margin: 10px 0;
 }
-.button-clean{
+.lil-button-clean{
     background-color:rgb(194, 165, 221) ;
     width: 70px;
     border-radius: 20px;
 }
-.button-add{
+.lil-button-add{
     background-color:rgb(194, 165, 221) ;
     width: 70px;
     border-radius: 20px; 
